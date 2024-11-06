@@ -1,0 +1,60 @@
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.input_div{
+    /* border: 1px solid black; */
+    width: 80%;
+}
+
+.title {
+    margin: 1em;
+    height: 7vh;
+    width: 70%;
+    outline: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 0.5em;
+    border: none;
+
+}
+
+.date_time {
+    color: rgb(126, 126, 126);
+    font-family: monospace;
+    margin-left: 2.9em;
+}
+
+.content {
+    margin: 0.5em 1.5em ;
+    padding: 0.8em;
+    font-size: 1.2em;
+    height: 65%;
+    width: 70%;
+    outline: none;
+    border: none;
+    text-align: start;
+    overflow: scroll;
+    scrollbar-width: none;
+    resize: none;
+}
+
+.btn_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    padding-bottom: 1em;
+    width: 20%;
+    button{
+        padding: 0.6em;
+        background-color: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 0.2em;
+    }
+}
