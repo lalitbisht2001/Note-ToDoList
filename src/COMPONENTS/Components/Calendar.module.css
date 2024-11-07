@@ -1,8 +1,9 @@
-.main{
+.main {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .week_div {
     border: 2px solid rgb(213, 213, 213);
     border-radius: 0.3em;
@@ -21,11 +22,47 @@
     font-size: 1.1em;
     font-family: sans-serif;
     color: rgb(93, 93, 93);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 15%;
     cursor: pointer;
 }
 
 .week:hover {
     color: blue;
+}
+
+@media screen and (max-width : 973px) {
+    .main {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .week_div {
+        /* border: 2px solid rgb(213, 213, 213); */
+        border-radius: 0.3em;
+        padding: 1em;
+        width: 34%;
+        height: 62vh;
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.4em;
+        background-color: white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .week {
+        font-size: 1.1em;
+        font-family: sans-serif;
+        color: rgb(93, 93, 93);
+        /* border: 1px solid black; */
+        width: 95%;
+        cursor: pointer;
+    }
+
+    .week:hover {
+        color: blue;
+    }
 }

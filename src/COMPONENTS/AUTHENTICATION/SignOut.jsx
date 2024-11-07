@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 
 const SignOut = ({ setIsSign }) => {
-   
+
     const [input, setInput] = useState({
         email: "",
         password: "",
@@ -74,9 +74,9 @@ const SignOut = ({ setIsSign }) => {
                     />
                     {error && <div className={style.error}>{error}</div>}
                 </div>
-                <button type="submit" className={style.btn}>Log In</button>
+                <button type="submit" className={style.btn}>Sign In</button>
                 <div>
-                    <span onClick={handleSign}>Login</span>
+                    <span onClick={handleSign} className={style.btn2}>Login</span>
                 </div>
             </form>
         </div>

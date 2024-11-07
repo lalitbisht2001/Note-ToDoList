@@ -80,7 +80,7 @@ const Login = ({ setIsUserLogin, setEmail }) => {
                             {error && <div className={style.error}>{error}</div>}
                         </div>
                         <button type="submit" className={style.btn}>Log In</button>
-                        <span onClick={handleSign} className={style.signupLink}>Sign up</span>
+                        <span onClick={handleSign} className={style.btn2}>Sign up</span>
                     </form>
                 </div>
             )}

@@ -41,7 +41,6 @@ const Task = () => {
         setTimeout(() => {
             if (alarmActive) {
                 sound.play();
-                alert(`Alarm: ${message}`);
             }
             setAlarmSet(false);
         }, timeDifference);
@@ -53,7 +52,7 @@ const Task = () => {
             alarmSound.currentTime = 0;
         }
         setAlarmActive(false);
-       
+
     };
 
     return (
@@ -78,7 +77,15 @@ const Task = () => {
                     />
                 </div>
                 <div className={style.topic_div}>
-                    {alarmSet && <p className={style.topic}>Alarm set for {new Date(dateTime).toLocaleString()}</p>}
+                    {alarmSet && <div>
+                        <p className={style.topic}>
+                            Alarm set for {new Date(dateTime).toLocaleString()}
+                        </p>
+                        <p style={{ color: "purple" }}>
+                            ({message})
+                        </p>
+                    </div>
+                    }
                 </div>
             </div>
             <div className={style.btn_div}>
@@ -87,13 +94,6 @@ const Task = () => {
                 </button>
                 <button onClick={handleStopAlarm} className={style.btn}>Stop Alarm</button>
             </div>
-
-
-            {alarmActive && (
-                <div>
-
-                </div>
-            )}
         </div>
     );
 };

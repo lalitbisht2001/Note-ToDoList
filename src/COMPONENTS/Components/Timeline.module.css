@@ -17,6 +17,7 @@
     p {
         text-align: center;
         line-height: 2em;
+        color: green;
     }
 }
 
@@ -28,4 +29,75 @@
     background-color: orange;
     border: 3px solid white;
     cursor: pointer;
+}
+
+@media screen and (min-width : 767px) and (max-width:954px) {
+    .main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: wheat;
+    }
+
+    .heading {
+        color: black;
+        /* background-color: white; */
+        font-family: sans-serif, monospace;
+        font-size: 2em;
+        text-transform: uppercase;
+
+        p {
+            text-align: center;
+            line-height: 2em;
+            color: green;
+        }
+    }
+
+    .btn {
+        font-size: 1.2em;
+        padding: 1em 0.7em;
+        border-radius: 0.3em;
+        color: white;
+        background-color: orange;
+        border: 3px solid white;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: wheat;
+    }
+
+    .heading {
+        color: black;
+        /* background-color: white; */
+        font-family: sans-serif, monospace;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        text-align: center;
+
+        p {
+            text-align: center;
+            line-height: 2em;
+            color: green;
+        }
+    }
+
+    .btn {
+        font-size: 1.2em;
+        padding: 1em 0.7em;
+        border-radius: 0.3em;
+        color: white;
+        background-color: orange;
+        border: 3px solid white;
+        cursor: pointer;
+    }
 }

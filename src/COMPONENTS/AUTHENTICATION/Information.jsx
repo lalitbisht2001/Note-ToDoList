@@ -94,28 +94,28 @@ const Information = ({ Email }) => {
                     </div>
                     <div className={style.info_div}>
                         <div className={style.form_}>
-                            <p>Name</p>
-                            <p>{userData.name}</p>
+                            <p className={style.form_heading_data}>Name</p>
+                            <p className={style.form_data}>{userData.name}</p>
                         </div>
                         <div className={style.form_}>
-                            <p>Email</p>
-                            <p>{userData.email}</p>
+                            <p className={style.form_heading_data}>Email</p>
+                            <p className={style.form_data}>{userData.email}</p>
                         </div>
                         <div className={style.form_}>
-                            <p>Mobile Number</p>
-                            <p>{userData.phone}</p>
+                            <p className={style.form_heading_data}>Mobile Number</p>
+                            <p className={style.form_data}>{userData.phone}</p>
                         </div>
                         <div className={style.form_}>
-                            <p>Address</p>
-                            <p>{userData.address}</p>
+                            <p className={style.form_heading_data}>Address</p>
+                            <p className={style.form_data}>{userData.address}</p>
                         </div>
                         <div className={style.form_}>
-                            <p>Age</p>
-                            <p>{userData.age}</p>
+                            <p className={style.form_heading_data}>Age</p>
+                            <p className={style.form_data}>{userData.age}</p>
                         </div>
                         <div className={style.form_}>
-                            <p>Occupation</p>
-                            <p>{userData.occupation}</p>
+                            <p className={style.form_heading_data}>Occupation</p>
+                            <p className={style.form_data}>{userData.occupation}</p>
                         </div>
                     </div>
                 </div>

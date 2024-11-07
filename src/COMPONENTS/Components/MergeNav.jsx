@@ -13,7 +13,7 @@ const MergeNav = ({ handlePage, date }) => {
                 <p className={`nav-link ${activeTab === 'Overview' ? 'active' : ''}`} onClick={() => handleTab('Overview')} >Overview</p>
                 <p className={`nav-link ${activeTab === 'List' ? 'active' : ''}`} onClick={() => handleTab('List')}>List</p>
                 <p className={`nav-link ${activeTab === 'Account' ? 'active' : ''}`} onClick={() => handleTab('Account')}>Account</p>
-                <p className={`nav-link ${activeTab === 'Timeline' ? 'active' : ''}`} onClick={() => handleTab('Timeline')}>Timeline</p>
+                <p className={`nav-link ${activeTab === 'Timeline' ? 'active' : ''}`} onClick={() => handleTab('Timeline')}>Logout</p>
                 <p className={`nav-link ${activeTab === 'Calendar' ? 'active' : ''}`} onClick={() => handleTab('Calendar')}>Calendar</p>
             </div>
             <div className="date_div">
